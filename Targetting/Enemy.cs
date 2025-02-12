@@ -1,30 +1,33 @@
 public class Enemy
 {
     private int hp;
-    public int def;
-    public int res;
-    public Enemy(int _hp, int _def, int _res)
+    private int def;
+    private int res;
+    private int progress;
+
+    public Enemy(int _hp, int _def, int _res, int _progress)
     {
         hp = _hp;
         def = _def;
         res = _res;
+        progress= _progress;
     }
 
-    public void GetHit(bool ArtsDmg, int Atk)
+    public void GetHit(bool artsDmg,bool airTargetting, int atk)
     {
-        if (ArtsDmg)
+        if (artsDmg)
         {
-            hp -= Atk * res / 100;
+            hp -= atk * res / 100;
         }
-        else if (ArtsDmg == false)
+        else if (artsDmg == false)
         {
-            if (def > Atk)
+            if (def > atk)
             {
-                hp -= Atk / 100 * 5;
+                hp -= atk / 100 * 5;
             }
             else
             {
-                hp -= Atk - def;
+                hp -= atk - def;
             }
         }
         if (hp < 0)
@@ -40,8 +43,17 @@ public class Enemy
     {
         return def;
     }
-    public int Getres()
+    public int GetRes()
     {
         return res;
     }
+    public int GetProgress()
+    {
+        return progress;
+    }
+    public int SetProgress(int _Progress)
+    {
+    return progress-=_Progress;
+    }
+
 }

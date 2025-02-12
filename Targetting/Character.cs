@@ -1,19 +1,27 @@
 public class Character
 {
+    private int atk;
+    private int minRange;
+    private int maxRange;
 
-    public Character(bool a, int b) {
-        ArtsDmg = a;
-        Atk=b;
-    }
-private bool ArtsDmg;
-private int Atk;
-public bool GetArtsDmg()
+    public Character(int _atk, int _minRange, int _maxRange)
     {
-        return ArtsDmg;
+        atk = _atk;
+        minRange=_minRange;
+        maxRange=_maxRange;
+
     }
     public int GetAtk()
     {
-        return Atk;
+        return atk;
+    }
+    public int GetMinRange()
+    {
+        return minRange;
+    }
+    public int GetMaxRange()
+    {
+        return maxRange;
     }
 }
 
