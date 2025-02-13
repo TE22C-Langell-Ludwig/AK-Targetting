@@ -10,10 +10,10 @@ public class Enemy
         hp = _hp;
         def = _def;
         res = _res;
-        progress= _progress;
+        progress = _progress;
     }
 
-    public void GetHit(bool artsDmg,bool airTargetting, int atk)
+    public void GetHit(bool artsDmg, bool airTargetting, int atk)
     {
         if (artsDmg)
         {
@@ -53,7 +53,7 @@ public class Enemy
     }
     public int SetProgress(int _Progress)
     {
-    return progress-=_Progress;
+        return progress -= _Progress;
     }
 
 }

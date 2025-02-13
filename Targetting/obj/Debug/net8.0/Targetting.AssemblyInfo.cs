@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Targetting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fb890e403eec6a1fa103b5816b4485b4b5223d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e833099bd4a9c787c514859c3f70d12649bdefc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Targetting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Targetting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

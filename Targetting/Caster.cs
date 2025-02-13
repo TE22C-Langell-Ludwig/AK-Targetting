@@ -2,7 +2,7 @@ using System;
 
 namespace Targetting;
 
-public class Caster : Character
+public class Caster : RangedOperator
 {
     private bool artsDmg;
     public Caster(bool _artsDmg, int _atk, int _minRange, int _maxRange) : base(_atk, _minRange, _maxRange)
