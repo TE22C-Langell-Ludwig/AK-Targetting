@@ -3,9 +3,9 @@ namespace Targetting;
 public class Operator
 {
     private int atk;
-    public Operator(int _atk)
+    public Operator(int Atk)
     {
-        atk = _atk;
+        atk = Atk;
     }
     public int GetAtk()
     {

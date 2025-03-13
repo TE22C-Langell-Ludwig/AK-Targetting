@@ -5,9 +5,9 @@ namespace Targetting;
 public class Caster : RangedOperator
 {
     private bool artsDmg;
-    public Caster(bool _artsDmg, int _atk, int _minRange, int _maxRange) : base(_atk, _minRange, _maxRange)
+    public Caster(bool ArtsDmg, int Atk, int MinRange, int MaxRange) : base(Atk, MinRange, MaxRange)
     {
-        artsDmg = _artsDmg;
+        artsDmg = ArtsDmg;
     }
     public bool GetArtsDmg()
     {

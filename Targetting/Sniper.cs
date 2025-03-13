@@ -6,9 +6,9 @@ public class Sniper : RangedOperator
 {
     private bool airTargetting;
 
-    public Sniper(int _atk, int _minRange, int _maxRange, bool _airTargetting) : base(_atk, _minRange, _maxRange)
+    public Sniper(int Atk, int MinRange, int MaxRange, bool AirTargetting) : base(Atk, MinRange, MaxRange)
     {
-        airTargetting = _airTargetting;
+        airTargetting = AirTargetting;
     }
     public bool GetAirTargetting()
     {

@@ -5,10 +5,10 @@ public class RangedOperator : Operator
     private int minRange;
     private int maxRange;
 
-    public RangedOperator(int _atk, int _minRange, int _maxRange) : base(_atk)
+    public RangedOperator(int Atk, int MinRange, int MaxRange) : base(Atk)
     {
-        minRange = _minRange;
-        maxRange = _maxRange;
+        minRange = MinRange;
+        maxRange = MaxRange;
 
     }
     public int GetMinRange()

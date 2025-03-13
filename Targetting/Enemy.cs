@@ -5,12 +5,12 @@ public class Enemy
     private int res;
     private int progress;
 
-    public Enemy(int _hp, int _def, int _res, int _progress)
+    public Enemy(int Hp, int Def, int Res, int Progress)
     {
-        hp = _hp;
-        def = _def;
-        res = _res;
-        progress = _progress;
+        hp = Hp;
+        def = Def;
+        res = Res;
+        progress = Progress;
     }
 
     public void GetHit(bool artsDmg, bool airTargetting, int atk)
@@ -51,9 +51,9 @@ public class Enemy
     {
         return progress;
     }
-    public int SetProgress(int _Progress)
+    public int SetProgress(int Progress)
     {
-        return progress -= _Progress;
+        return progress -= Progress;
     }
 
 }
